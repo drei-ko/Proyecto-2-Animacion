@@ -3,16 +3,6 @@ background-color: rgb(187, 150, 223);
 
 }
 
-.flex {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start; /*posicion de los botones se colocan al inicio de la pagina*/
-  background-color: rgb(146, 118, 165);
-}
-.flex h1 {
-  padding-left: 1em;
-}
-
 .animacion {
 	border-radius: 50%;
   width: 100px;
