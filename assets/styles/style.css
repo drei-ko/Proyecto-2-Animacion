@@ -1,0 +1,29 @@
+.flex{
+  display: flex;
+  justify-content: space-evenly;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  align-items: center;
+  margin-right: 30px;
+}
+
+.flex ul{
+  list-style-type: none;
+  text-align: center;
+  font-size: 18px;
+}
+.flex li{
+  display: inline-block;
+}
+a{
+  text-decoration: underline;
+  color: black;
+}
+a.selected{
+  text-decoration: underline;
+  color: green;
+}
+a:hover{
+  text-decoration-color: green;
+  text-decoration: underline;
+  color: orange;
+}
