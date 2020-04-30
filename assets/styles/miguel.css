@@ -76,16 +76,23 @@ a:hover {
     text-align: center;
 
     /* color letra */
-    color: aquamarine;
+    color: #fc4444;
 }
 
 /* estilo para los titulos dentro del baner */
 .baner h1 {
-    font-size: 54px;
+    font-size: 100px;
     text-transform: uppercase;
     margin: 0;
-    font-family: 'Manrope', sans-serif;
+    font-family: 'Creepster',
+        cursive;
     text-shadow: 5px 5px 5px black;
+}
+
+.baner h3 {
+    font-family: 'Manrope',
+        sans-serif;
+    color: blanchedalmond;
 }
 
 /* Este es un div que SIMULA un filtro  */
@@ -120,18 +127,21 @@ a:hover {
         background-size: cover;
         background-position: center;
         background-image:
-            url(http://4.bp.blogspot.com/-SNhkH2wQsNM/T5gMRezgb7I/AAAAAAAABKI/Zx5ZQC9_Tf4/s1600/6837786474_3037b0c215_z.jpg);
+            url(https://consequenceofsound.net/wp-content/uploads/2019/05/Screen-Shot-2019-05-06-at-1.11.54-PM.png);
     }
 
     25% {
-        background-image: url(http://2.bp.blogspot.com/-gniyfPLOKpw/T5gMSukoeUI/AAAAAAAABKQ/cIsg7YPD12Q/s1600/6876710676_0cdf5dabf6_z.jpg);
-    }
-
-    75% {
-        background-image: url(http://3.bp.blogspot.com/-yKSz1YRWlIU/T5gMT7mH71I/AAAAAAAABKY/yvmCby_5bUk/s1600/7022818143_09aea84bc7_z.jpg);
+        background-image:
+            url(https://store-images.s-microsoft.com/image/apps.6637.64531068730625439.08f7c7bb-5bea-4aae-95ac-c1b8c3b49af3.ec8489c9-9275-4717-addc-63e9703d02de?mode=scale&q=90&h=1080&w=1920&format=jpg);
     }
 
     50% {
-        background-image: url(http://2.bp.blogspot.com/-Ub9iPnS346Y/T5gMU2eeU1I/AAAAAAAABKg/epO8XZMiO68/s1600/7030471071_a695296f82_z.jpg);
+        background-image:
+            url(hhttps://as.com/tikitakas/imagenes/2017/09/08/portada/1504858184_443281_1504858685_noticia_normal.jpg);
+    }
+
+    75% {
+        background-image:
+            url(https://static01.nyt.com/images/2017/05/07/arts/07ALIEN6/07ALIEN6-videoSixteenByNineJumbo1600.jpg);
     }
 }
