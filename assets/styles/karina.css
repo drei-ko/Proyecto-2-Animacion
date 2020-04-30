@@ -1,0 +1,24 @@
+body{
+background-color: rgb(187, 150, 223);
+
+}
+
+.animacion {
+	border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  background-color: rgb(228, 6, 135);
+  animation-name: example;
+  animation-duration: 4s;
+}
+
+@keyframes example {
+  0%   {background-color: rgb(18, 209, 216);}
+  25%  {background-color: rgb(93, 90, 226);}
+  50%  {background-color: rgb(129, 71, 184);}
+  100% {background-color: rgb(160, 8, 84);}
+}
+
+
+
+
