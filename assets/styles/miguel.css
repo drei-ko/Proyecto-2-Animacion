@@ -1,0 +1,147 @@
+body {
+    margin: 0;
+    padding: 1em;
+    background-color: #c5e0d6;
+}
+
+/* Estilos para el Menú de navegación */
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+}
+
+.navbar {
+    margin: 0;
+    padding: 10px;
+    list-style-type: none;
+    text-align: center;
+    font-size: 20px;
+    background-color: #f5f5f4;
+}
+
+.navbar li {
+    display: inline-block;
+    padding: 10px;
+    background-color: #252a34;
+}
+
+.navbar a {
+    color: #f5f5f4;
+    text-decoration: none;
+    background-color: #4c5566;
+    padding: 5px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.selected {
+
+    border-bottom: #4fbdc5 solid 10px;
+}
+
+a:hover {
+    background-color: #e83466;
+}
+
+/* Estilos para la Animación */
+
+/* Contenedor del banner */
+.baner-contenedor {
+    height: 400px;
+    width: 850px;
+    max-width: 100%;
+
+    margin: 100px auto;
+    border-radius: 10px;
+
+    overflow: hidden;
+    box-shadow: 5px 5px 10px #669b87;
+
+    position: relative;
+}
+
+/* Estilos para los Baners */
+.baner {
+    height: 100%;
+    width: 100%;
+
+    /* Para alinear */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    text-align: center;
+
+    /* color letra */
+    color: #fc4444;
+}
+
+/* estilo para los titulos dentro del baner */
+.baner h1 {
+    font-size: 100px;
+    text-transform: uppercase;
+    margin: 0;
+    font-family: 'Creepster',
+        cursive;
+    text-shadow: 5px 5px 5px black;
+}
+
+.baner h3 {
+    font-family: 'Manrope',
+        sans-serif;
+    color: blanchedalmond;
+}
+
+/* Este es un div que SIMULA un filtro  */
+.filtro {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.filtro~* {
+    /* Estilo para que la letra quede SOBRE el filtro */
+    z-index: 1;
+}
+
+.baner1 {
+    animation: fondo-que-cambia 10s infinite;
+    /*
+  animation-name: fondo;
+  animation-duration: 10s;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  */
+}
+
+@keyframes fondo-que-cambia {
+
+    0%,
+    100% {
+        background-size: cover;
+        background-position: center;
+        background-image:
+            url(https://consequenceofsound.net/wp-content/uploads/2019/05/Screen-Shot-2019-05-06-at-1.11.54-PM.png);
+    }
+
+    25% {
+        background-image:
+            url(https://store-images.s-microsoft.com/image/apps.6637.64531068730625439.08f7c7bb-5bea-4aae-95ac-c1b8c3b49af3.ec8489c9-9275-4717-addc-63e9703d02de?mode=scale&q=90&h=1080&w=1920&format=jpg);
+    }
+
+    50% {
+        background-image:
+            url(hhttps://as.com/tikitakas/imagenes/2017/09/08/portada/1504858184_443281_1504858685_noticia_normal.jpg);
+    }
+
+    75% {
+        background-image:
+            url(https://static01.nyt.com/images/2017/05/07/arts/07ALIEN6/07ALIEN6-videoSixteenByNineJumbo1600.jpg);
+    }
+}
