@@ -1,3 +1,11 @@
+body {
+    margin: 0;
+    padding: 1em;
+    background-color: #c5e0d6;
+}
+
+/* Estilos para el Menú de navegación */
+
 .flex {
     display: flex;
     justify-content: space-between;
@@ -5,9 +13,9 @@
     margin: 0;
 }
 
-.navbar ul {
+.navbar {
     margin: 0;
-    padding: 0;
+    padding: 10px;
     list-style-type: none;
     text-align: center;
     font-size: 20px;
@@ -37,3 +45,93 @@ a:hover {
     background-color: #e83466;
 }
 
+/* Estilos para la Animación */
+
+/* Contenedor del banner */
+.baner-contenedor {
+    height: 400px;
+    width: 850px;
+    max-width: 100%;
+
+    margin: 100px auto;
+    border-radius: 10px;
+
+    overflow: hidden;
+    box-shadow: 5px 5px 10px #669b87;
+
+    position: relative;
+}
+
+/* Estilos para los Baners */
+.baner {
+    height: 100%;
+    width: 100%;
+
+    /* Para alinear */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    text-align: center;
+
+    /* color letra */
+    color: aquamarine;
+}
+
+/* estilo para los titulos dentro del baner */
+.baner h1 {
+    font-size: 54px;
+    text-transform: uppercase;
+    margin: 0;
+    font-family: 'Manrope', sans-serif;
+    text-shadow: 5px 5px 5px black;
+}
+
+/* Este es un div que SIMULA un filtro  */
+.filter {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.filter~* {
+    /* Estilo para que la letra quede SOBRE el filtro */
+    z-index: 1;
+}
+
+.baner1 {
+    animation: fondo-que-cambia 10s infinite;
+    /*
+  animation-name: fondo;
+  animation-duration: 10s;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  */
+}
+
+@keyframes fondo-que-cambia {
+
+    0%,
+    100% {
+        background-size: cover;
+        background-position: center;
+        background-image:
+            url(http://4.bp.blogspot.com/-SNhkH2wQsNM/T5gMRezgb7I/AAAAAAAABKI/Zx5ZQC9_Tf4/s1600/6837786474_3037b0c215_z.jpg);
+    }
+
+    25% {
+        background-image: url(http://2.bp.blogspot.com/-gniyfPLOKpw/T5gMSukoeUI/AAAAAAAABKQ/cIsg7YPD12Q/s1600/6876710676_0cdf5dabf6_z.jpg);
+    }
+
+    75% {
+        background-image: url(http://3.bp.blogspot.com/-yKSz1YRWlIU/T5gMT7mH71I/AAAAAAAABKY/yvmCby_5bUk/s1600/7022818143_09aea84bc7_z.jpg);
+    }
+
+    50% {
+        background-image: url(http://2.bp.blogspot.com/-Ub9iPnS346Y/T5gMU2eeU1I/AAAAAAAABKg/epO8XZMiO68/s1600/7030471071_a695296f82_z.jpg);
+    }
+}
