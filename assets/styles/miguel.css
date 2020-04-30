@@ -3,9 +3,7 @@ body {
     padding: 1em;
     background-color: #c5e0d6;
 }
-
 /* Estilos para el Menú de navegación */
-
 .flex {
     display: flex;
     justify-content: space-between;
@@ -137,7 +135,7 @@ a:hover {
 
     50% {
         background-image:
-            url(hhttps://as.com/tikitakas/imagenes/2017/09/08/portada/1504858184_443281_1504858685_noticia_normal.jpg);
+            url(https://as.com/tikitakas/imagenes/2017/09/08/portada/1504858184_443281_1504858685_noticia_normal.jpg);
     }
 
     75% {
